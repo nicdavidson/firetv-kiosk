@@ -1,0 +1,7 @@
+[Unit]
+Description=Keep the kiosk watcher running on the TV
+
+[Service]
+Type=oneshot
+# Edit the path and the TV address. Set ADB=/path/to/adb if adb is not on PATH.
+ExecStart=%h/firetv-kiosk/keepalive.sh 192.168.1.50
